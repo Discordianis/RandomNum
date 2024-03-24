@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>Угадай меня</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <link href="style/style.css" type="text/css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Finlandica:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="main-block">
+      <h1>Угадай меня</h1>
+      <p>Угадай слово, от которого Засос ловит экстаз.<br>
+        Либо это слово должно описывать его самого.<br>
+        Ну а если серьезно, то есть одно выигрышное слово, а также целых 5 секретных. Удачи.
+      </p>
+      <div class="labelGame">
+        <label for="guessField"></label>
+        <input type="text" pattern="[A-Za-z0-9]" maxlength="25" class="guessField" id="guessField" required placeholder="Введи слово...">
+        <input type="submit" class="guessSubmit" value="Проверить...">
+      </div>
+      <div class="gameStatus" id="gameStatus">
+        <p class="currentStatus"></p>
+        <p class="gameTries"></p>
+        <p class="lowOrHi"></p>
+        <p class="secretGame"></p>
+      </div>
+    </div>
+  <script src="js/script.js" type="text/javascript"></script>
+  </body>
+</html>
